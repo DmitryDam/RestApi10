@@ -1,0 +1,27 @@
+td {
+   border: 2px solid black;
+}
+th {
+  background: yellow;
+  border: 3px solid black;
+}
+table {
+  background: lightgrey;
+  border: 3px solid red;
+}
+button {
+  background: cyan;
+  border: 3px solid black;
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+}
+input {
+    border: 2px solid black;
+    margin:1px;
+    margin-top: 1rem;
+}
+form {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}

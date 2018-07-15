@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW10</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="7.css">
+</head>
+
+<body>
+<form class="form-js">
+  <button id="out1GetUsers">Get all users</button>
+  <button id="clearAll">Clear table</button>
+</form>
+
+ 
+    <table class="userTable">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+      </thead>
+      <tbody id="tableAll"></tbody>
+    </table>
+  
+<!-- Шаблон одной строки для tbody -->
+    <script type="text/template" id="table-row">
+      <tr scope="row">
+          <td><%- id%></td>
+          <td><%- name%></td>
+          <td><%- age%></td>
+      </tr>
+    </script>
+<!--     конец скрипта LoDash -->
+
+<form id="idForm" class="form-js">
+  <button id="outGetUserById">User by ID</button>
+  <button id="clearById">Clear table</button>
+  <br>
+  <input type="text" id="userID" placeholder="Input ID">
+</form>
+<!--     Для 1 юзера -->
+
+     <table class="userTableID">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+      </thead>
+      <tbody id="tBodyID"></tbody>
+    </table>
+  
+<!-- Шаблон одной строки для tbody -->
+    <script type="text/template" id="table-rowID">
+      <tr scope="row">
+          <td><%- id%></td>
+          <td><%- name%></td>
+          <td><%- age%></td>
+      </tr>
+    </script>
+<!--     конец скрипта LoDash -->
+
+
+    <form id="user">
+      <button id="out2AddUser">Add user</button>
+      <br>
+      <input type="text" id="userName" placeholder="Input new name">
+      <input type="" id="userScore" placeholder="Input new age">
+    </form>
+
+    <form id="remove">
+      <button id="out3RemoveUser">Remove user</button>
+      <br>
+      <input type="text" id="removeId" placeholder="Delete current ID">
+    </form>
+
+    <form id="change">
+      <button id="out4UpdateUser">Update user</button>
+      <br>
+      <input type="text" id="changeUserId" placeholder="Update current ID">
+      <input type="text" id="changeUserName" placeholder="Update current name">
+      <input type="text" id="changeUserScore" placeholder="Update current score">
+    </form>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+
+  <script src="7.js "></script>
+</body>
+
+</html>
